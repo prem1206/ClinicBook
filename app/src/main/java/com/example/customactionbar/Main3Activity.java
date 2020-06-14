@@ -92,7 +92,6 @@ public class Main3Activity extends AppCompatActivity {
            }
        });
 
-        Toast.makeText(this,""+val,Toast.LENGTH_LONG).show();
 
     }
 }

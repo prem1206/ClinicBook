@@ -1,9 +1,7 @@
 package com.example.customactionbar;
 
 import androidx.annotation.RequiresApi;
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
@@ -133,20 +131,14 @@ class CustomListAdapter extends BaseAdapter {
 
 public class MainActivity extends AppCompatActivity {
 
-    ListView listview1 ;
-    ListView listview2 ;
-
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-
         //setting the title
         toolbar.setTitle("");
-
         //placing toolbar in place of actionbar
         setSupportActionBar(toolbar);
         String fname = getIntent().getStringExtra("EXTRA_SESSION_ID");
@@ -164,8 +156,6 @@ public class MainActivity extends AppCompatActivity {
         items1.add(new Item("Dr Sophia Richards","Oncologist","Fortis",np));
         items1.add(new Item("Dr Melissa Richards","Chiropractor","Fortis",np));
 
-
-
         // instantiate the custom list adapter
         CustomListAdapter adapter = new CustomListAdapter(this, items1);
 
@@ -174,16 +164,10 @@ public class MainActivity extends AppCompatActivity {
         itemsListView.setAdapter(adapter);
 
 
-
-
-
-
         ArrayList<Item> items2 = new ArrayList<>(); // calls function to get items list
 
         items2.add(new Item("ABC","ABC","For",np));
         items2.add(new Item("ABC","ABC","For",np));
-
-
 
         // instantiate the custom list adapter
         CustomListAdapter adapter2 = new CustomListAdapter(this, items2);
