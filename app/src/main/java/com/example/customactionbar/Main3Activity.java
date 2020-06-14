@@ -38,7 +38,7 @@ public class Main3Activity extends AppCompatActivity {
         ussername = findViewById(R.id.email);
 
 
-       btn = findViewById(R.id.button);
+       btn = findViewById(R.id.login_btn);
 
        btn.setOnClickListener(new View.OnClickListener() {
            @Override
