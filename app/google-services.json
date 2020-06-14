@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "421630384601",
+    "firebase_url": "https://clinicbook-8f80f.firebaseio.com",
+    "project_id": "clinicbook-8f80f",
+    "storage_bucket": "clinicbook-8f80f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421630384601:android:973b607d1ce5c3f7f9a1c8",
+        "android_client_info": {
+          "package_name": "com.example.CustomActionBar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421630384601-b50k59snd7jb3e8apicpj48funhjav03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuG9lxuH7ibvOJdhB2F4TTOCdy7Cdut0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421630384601-b50k59snd7jb3e8apicpj48funhjav03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:421630384601:android:01febeb7d6d843a5f9a1c8",
+        "android_client_info": {
+          "package_name": "com.example.customactionbar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "421630384601-b50k59snd7jb3e8apicpj48funhjav03.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDuG9lxuH7ibvOJdhB2F4TTOCdy7Cdut0Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "421630384601-b50k59snd7jb3e8apicpj48funhjav03.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
