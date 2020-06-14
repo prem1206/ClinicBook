@@ -4,4 +4,7 @@
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
     <color name="col">#00808B</color>
+    <color name="grad1">#2193b0</color>
+    <color name="grad2">#6dd5ed</color>
+    <color name="login_field" >#8843cea2</color>
 </resources>

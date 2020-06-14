@@ -13,16 +13,17 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 
-class User{
+class User {
     public String firstname;
     public String lastname;
     public String password;
     public String email;
+
     public User() {
         // Default constructor required for calls to DataSnapshot.getValue(User.class)
     }
 
-    public User(String email, String password,String fname,String lname) {
+    public User(String email, String password, String fname, String lname) {
         this.firstname = fname;
         this.lastname = lname;
         this.password = password;
@@ -30,17 +31,15 @@ class User{
     }
 }
 
-public class Main2Activity extends AppCompatActivity  {
+public class Main2Activity extends AppCompatActivity {
 
 
-    EditText emailId , password1, password2,fname,lname;
+    EditText emailId;
+    EditText password1;
+    EditText fname;
+    EditText lname;
     TextView view;
     Button btn;
-
-    public  void signin(View view){
-        Intent i = new Intent(Main2Activity.this,Main3Activity.class);
-
-    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +59,8 @@ public class Main2Activity extends AppCompatActivity  {
         View();
 
     }
-    public void SignUp(){
+
+    public void SignUp() {
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -70,34 +70,20 @@ public class Main2Activity extends AppCompatActivity  {
                 String ln = lname.getText().toString();
 
                 FireBaseHelper FBH = new FireBaseHelper();
-                FBH.addData(fn,ln,email,pwd);
-
-
-
-
-
-
+                FBH.addData(fn, ln, email, pwd);
 
             }
         });
 
     }
+
     public void View() {
-        view.setOnClickListener(new View.OnClickListener() {
+        findViewById(R.id.login_btn).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
-
-               Intent i = new Intent(Main2Activity.this,Main3Activity.class);
-               startActivity(i);
-
-
+                Intent i = new Intent(Main2Activity.this, Main3Activity.class);
+                startActivity(i);
             }
         });
-
     }
-
-
-
-
 }
